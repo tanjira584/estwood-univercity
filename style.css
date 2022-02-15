@@ -1,3 +1,265 @@
-h1 {
-    color: red;
+/*-------------------------
+
+Template Name: Estwood Univercity;
+Template URI:https://tanjira584.github.io/estwood-univercity/
+Author Name: Tanjir Ahmed;
+Author URI: http://tanjir.com;
+Description: School, College & Univercity Website;
+Licence: 
+Licence URI:
+Verson:1.0;
+
+---------------------------
+
+	1. Typography
+	2. Header
+		2.1 Logo;
+		2.2 Main Menu;
+
+---------------------------*/
+
+/*-----------------------------------------------
+                Common Css Style
+-----------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+.container {
+    width: 95%;
+    margin: auto;
+}
+/*-----------------------------------------------
+               Header Top Section
+-----------------------------------------------*/
+.header-top {
+	padding: 10px 0;
+	background: #1e1445;
+}
+.header-top-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+/*-----Contact Info-----*/
+.contact-info {
+	margin-left: 16px;
+}
+.contact-info ul {
+	list-style: none;
+}
+.contact-info ul li {
+	display: inline;
+	font-size: 14px;
+	color: #FFF;
+}
+.contact-info ul li:not(:last-child):after{
+	position: relative;
+    display: inline-block;
+    content: '';
+    height: 2px;
+    margin: 0px 6px;
+    top: -4px;
+    border-left-style: solid;
+    border-left-width: 16px;
+    border-color: #2647f5;
+	
+}
+.section {
+	margin-right: 16px;
+}
+.section ul {
+	list-style: none;
+}
+.section ul li {
+	display: inline;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #FFF;
+}
+.section ul li:not(:last-child):after{
+	position: relative;
+    display: inline-block;
+    content: '';
+    height: 3px;
+    margin: 0px 10px;
+    top: -3px;
+    border-left-style: solid;
+    border-left-width: 3px;
+    border-color: #2647f5;
+}
+
+/*-----------------------------------------------
+              Header Main
+-----------------------------------------------*/
+.main-header {
+	position: relative;
+	padding: 10px 0;
+	box-shadow: 0px 7px 8px 0 #0000002b;
+}
+.main-header-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/*----Logo----*/
+.logo {
+	margin-left: 16px;
+}
+.logo img {
+	width: 250px;
+	height: auto;
+}
+.icon-shape {
+	text-align: right;
+	margin-right: 16px;
+}
+
+
+/*------Main Menu-----*/
+.menu #myDIV {
+	list-style: none;
+}
+.menu ul li {
+	display: inline;
+	transition: 0.5s all;
+}
+.menu ul li a {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+	padding: 16px 20px;
+	transition: 0.5s;
+}
+.menu ul li:hover a {
+	color: #eeaa23
+}
+.menu ul li.active a {
+	color: #eeaa23
+}
+.toggle-btn {
+	display: none;
+}
+.toggle-btn i {
+	font-size: 26px;
+}
+
+
+
+
+
+
+/*-----------------------------------------------
+              
+-----------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------
+               Media For 1024px
+-----------------------------------------------*/
+@media screen and (max-width: 1024px) {
+    .container {
+        width: inherit;
+    }
+    /*---Main Header---*/
+    .icons,.icon {
+		display: none;
+	}
+	.toggle-btn {
+		display: block;
+	}
+    /*--Menu--*/
+    .menu {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		background: green;
+		max-height: 0;
+		overflow: hidden;
+		transition: 0.5s all;
+	}
+	.menu.mobile-menu {
+		max-height:240px;
+	}
+	/*--------Extra for Moble Menu------*/
+	/*--------Extra for Moble Menu------*/
+	.menu ul li {
+		display: block;
+	}
+	.menu ul li a {
+		width: 100%;
+	}
+	.menu ul li:hover {
+		background: #eeaa23;
+	}
+	.menu ul li:hover a {
+		color: #FFF;
+	}
+	.menu ul li.active {
+		background: #eeaa23;
+	}
+	.menu ul li.active a {
+		color:#FFF;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------
+               Media For 768px
+-----------------------------------------------*/
+@media screen and (max-width: 768px) {
+    /*----Top Header----*/
+    .header-top {
+        display: none;
+    }
+}
+
+/*-----------------------------------------------
+               Media For 540px
+-----------------------------------------------*/
+@media screen and (max-width: 540px) {
+    /*----Main Menu----*/
+    .logo img {
+        width: 160px;
+    }
 }
