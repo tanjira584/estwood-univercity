@@ -260,14 +260,208 @@ a {
 	font-size: 12px;
 	color: #FFF;
 }
-
-
-
+/*-----------------------------------------------
+              Choose Us Section
+-----------------------------------------------*/
+.choose-us {
+	padding: 100px 0;
+}
+.chose-us-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 16px;
+	margin-bottom: 40px;
+}
+.chose-us-info h6 {
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 12px;
+	color: #3b2c73;
+}
+.chose-us-info h2 {
+	font-size: 40px;
+	font-family: zilla;
+	font-weight: normal;
+	line-height: 1.3em;
+	margin-bottom: 12px;
+	color: #3b2c73;
+}
+.chose-us-info hr {
+	display: inline-block;
+	border: 1px solid #000;
+	width: 150px;
+	margin-bottom: 12px;
+}
+.info-btn{
+	margin: 0 16px;
+}
+.info-btn a {
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
+	color: #000;
+}
+.info-btn a i {
+	margin-left: 4px;
+	transition: 0.5s;
+}
+.choose-us .row {
+	overflow: hidden;
+}
+.choose-us .col-4 {
+	width: 33.33%;
+	float: left;
+}
+.chose-cause {
+	margin: 0 16px;
+}
+.chose-cause .cause1 img {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 16px;
+}
+.chose-cause .cause1 h3 {
+	font-size: 22px;
+	font-family: zilla;
+	text-transform: capitalize;
+	margin-bottom: 16px;
+	letter-spacing: 1px;
+}
+.chose-cause .cause1 p {
+	line-height: 1.6em;
+	margin-bottom: 16px;
+}
+.chose-cause .cause1 a{
+	text-transform: uppercase;
+	padding: 16px 32px;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #3b2c73;
+	border: 1px solid #3b2c73;
+	transition: 0.5s all;
+}
+.chose-cause .cause1 a:hover {
+	background: #3b2c73;
+	color: #FFF;
+}
+.choose-us .col-4:nth-child(3) .cause1 {
+	display: flex;
+	margin-bottom: 30px;
+}
+.choose-us .col-4:nth-child(3) .cause1 .cause-img {
+	width: 70%;
+}
+.choose-us .col-4:nth-child(3) .cause1 .cause-content {
+	width: 100%;
+	margin-left: 10px;
+}
+.choose-us .col-4:nth-child(3) .cause1 .cause-content p {
+	display: none;
+}
+.choose-us .col-4:nth-child(3) .cause1 .cause-content h3 {
+	font-size: 18px;
+}
+.choose-us .col-4:nth-child(3) .cause1 .cause-content a {
+	padding: 13px 26px;
+}
+/*-----------------------------------------------
+              HOme Counter
+-----------------------------------------------*/
+.home-counter {
+	padding-bottom: 100px;
+}
+.home-counter-row{
+	display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.counter-row {
+	margin:0px 16px;
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.counter-row .count {
+	text-align: center;
+}
+.counter-row .count img {
+	width: 120px;
+}
+.counter-row .count h2 {
+	font-size: 44px;
+    margin-top: -12px;
+	text-transform: capitalize;
+}
+.counter-row .count p {
+	color: #787878;
+	text-transform: capitalize;
+}
+.counter-row .count .number {
+	transition: 0.5s all;
+}
+.count-progress {
+	margin: 0 16px;
+	margin-top: 30px;
+}
+.count-progress ul {
+	list-style: none;
+}
+.count-progress ul li {
+	margin-bottom: 20px;
+}
+.count-progress ul li p {
+	text-transform: capitalize;
+	margin-bottom: 8px;
+}
+.count-progress .progress-bar {
+	width: 100%;
+	height: 4px;
+	background: #CCCCCC;
+	border-radius: 8px;
+}
+.count-progress .progress-bar .bar {
+	width: 70%;
+	height: 4px;
+	background: #3b2c73;
+	opacity: 1;
+	transition: 1s ease-in-out;
+}
+/*-----------------------------------------------
+              Academic Structure
+-----------------------------------------------*/
+.academic-structure {
+	padding: 100px 0;
+	background: #f7f7f7;
+}
+.academic-row{
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.structure {
+	text-align: center;
+}
+.structure img {
+	display: inline-block;
+	width: 100%;
+	max-height: 350px;
+	margin-bottom: 16px;
+}
+.structure p {
+	color: #787878;
+	text-transform: uppercase;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+.structure h4 {
+	font-size: 22px;
+	font-family: zilla;
+	font-weight: normal;
+	text-transform: capitalize;
+}
 /*-----------------------------------------------
               
 -----------------------------------------------*/
-
-
 
 
 
@@ -526,8 +720,13 @@ a {
     .news-boxes {
         grid-template-columns: 1fr 1fr;
     }
-
-
+    /*----Choose Us Section----*/
+    .choose-us .col-4 {
+        width: 50%;
+    }
+    .choose-us .col-4:nth-child(3) {
+       display: none;
+    }
 
 
 
@@ -577,6 +776,33 @@ a {
     .news-boxes {
         grid-template-columns: 1fr;
     }
+    /*----Home Counter Row ----*/
+    .home-counter-row {
+        grid-template-columns: 1fr;
+    }
+    .count-progress {
+        margin: 0 50px;
+    }
+    .counter-row {
+        grid-template-columns:  1fr 1fr;
+    }
+    .counter-row .count {
+        margin-bottom: 32px;
+    }
+    .choose-us .col-4:nth-child(2) .chose-cause {
+        margin-bottom: 0;
+    }
+    /*----Academic Structure----*/
+    .academic-row {
+        grid-template-columns: 1fr 1fr;
+    }
+    .structure {
+        margin: 0 16px;
+        margin-bottom: 32px;
+    }
+
+
+
 
 
 
@@ -635,7 +861,27 @@ a {
         width: 98%;
         font-size: 36px;
     }
-
+     /*----Choose Us Section----*/
+     .choose-us .col-4 {
+        width: 100%;
+    }
+    .chose-cause {
+        margin-bottom: 32px;
+    }
+    .chose-us-info {
+        display: inherit;
+        text-align:center;
+    }
+    .chose-us-info h2 {
+        font-size: 32px;
+    }
+     /*----Academic Structure----*/
+     .academic-row {
+        grid-template-columns: 1fr;
+    }
+    .structure:last-of-type {
+        margin-bottom: 0;
+    }
 
 
 
