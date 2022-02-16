@@ -35,6 +35,10 @@ a {
     width: 95%;
     margin: auto;
 }
+@font-face{
+	font-family:zilla;
+	src:url('font/zilla.woff');
+}
 /*-----------------------------------------------
                Header Top Section
 -----------------------------------------------*/
@@ -151,6 +155,141 @@ a {
 .toggle-btn i {
 	font-size: 26px;
 }
+/*-----------------------------------------------
+              
+-----------------------------------------------*/
+.home {
+	background-image: url('images/fallback.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.home .overlay {
+	padding: 100px 0;
+	padding-bottom: 200px;
+	background: rgba(0, 0, 0, 0.425);
+}
+.home .home-content {
+	margin: 0 16px;
+	text-align: center;
+}
+.home .home-content h1 {
+	width: 70%;
+	font-size: 70px;
+	margin: 0 auto;
+	line-height: 1.1em;
+	color: #FFF;
+	font-family: zilla;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+.home .home-content p {
+	font-size: 16px;
+	font-weight: bold;
+    letter-spacing: 0.5px;
+	color: #FFF;
+}
+.home-content a {
+    text-transform: uppercase;
+	margin: 30px 10px 0px 10px;
+	padding: 24px 40px;
+	font-weight: bold;
+	font-size: 14px;
+    transition: 0.5s all;
+}
+.home-content a:first-of-type {
+	color: #1e1445;
+	background: #FFF;
+	border: 2px solid #FFF;
+}
+.home-content a:first-of-type:hover {
+	color: #FFF;
+	background: #1e1445;
+	border: 2px solid #1e1445;
+}
+.home-content a:last-child {
+	color: #FFF;
+	background: transparent;
+	border: 2px solid #FFF;
+}
+.home-content a:last-child:hover {
+	background: #1e1445;
+	border: 2px solid #1e1445;
+}
+/*-----------------------------------------------
+              Home Heading News
+-----------------------------------------------*/
+.news-heading {
+	padding: 30px 0;
+	background: transparent;
+	margin-top: -180px;
+}
+.news-heading-row {
+	display: grid;
+    grid-template-columns: 1fr 6fr;
+	align-items: center;
+}
+
+.news-heading .e-news {
+	margin: 0 16px;
+	padding: 10px 10px;
+	background: #FFF;
+}
+.news-heading .e-news h2 {
+	font-size: 34px;
+	font-weight: normal;
+	text-transform: capitalize;
+	font-family: zilla;
+}
+.news-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.news-title {
+	margin: 0 16px;
+	padding: 10px 0;
+}
+.news-title h4 {
+	font-size: 20px;
+	font-family: zilla;
+	line-height: 1.3em;
+	margin-bottom: 10px;
+	color: #FFF;
+}
+.news-title p {
+	font-size: 12px;
+	color: #FFF;
+}
+
+
+
+/*-----------------------------------------------
+              
+-----------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*-----------------------------------------------
               Footer Top Section
 -----------------------------------------------*/
@@ -324,41 +463,6 @@ a {
 }
 
 
-
-
-
-
-
-
-
-/*-----------------------------------------------
-              
------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*-----------------------------------------------
                Media For 1024px
 -----------------------------------------------*/
@@ -407,6 +511,30 @@ a {
 	.menu ul li.active a {
 		color:#FFF;
 	}
+
+    /*----Home Section-----*/
+    .home .overlay {
+        padding-bottom: 230px;
+    }
+    .home .home-content h1 {
+        width: 85%;
+    }
+    /*-----Home Heading news----*/
+    .news-heading {
+        margin-top: -230px;
+    }
+    .news-boxes {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -426,7 +554,29 @@ a {
     .header-top {
         display: none;
     }
-
+    /*----Home Section-----*/
+    .home .overlay {
+        padding-bottom: 450px;
+    }
+    .home .home-content h1 {
+        width: 95%;
+        font-size: 46px;
+    }
+    /*-----Home Heading news----*/
+    .news-heading-row {
+        grid-template-columns: 1fr;
+    }
+    .news-heading .e-news {
+        padding: 16px 10px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .news-heading {
+        margin-top: -440px;
+    }
+    .news-boxes {
+        grid-template-columns: 1fr;
+    }
 
 
 
@@ -480,7 +630,11 @@ a {
     .logo img {
         width: 160px;
     }
-
+    /*----Home Section----*/
+    .home .home-content h1 {
+        width: 98%;
+        font-size: 36px;
+    }
 
 
 
