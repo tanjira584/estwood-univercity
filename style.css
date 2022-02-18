@@ -705,14 +705,102 @@ a {
 	font-size: 12px;
 	color: #787878;
 }
-
-
+/*-----------------------------------------------
+              Lecturer Section
+-----------------------------------------------*/
+.lectureres {
+	padding: 100px 0;
+	background: #f7f7f7;
+}
+.staff-row {
+	display: grid;
+	grid-template-columns: 3.5fr 4fr 3fr;
+}
+.staff-img {
+	margin: 0 16px;
+}
+.staff-img img {
+	width: 100%;
+}
+.staff-info {
+	margin: 0 16px;
+	padding: 0 10px;
+}
+.staff-info h6 {
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 12px;
+	color: #3b2c73;
+}
+.staff-info h2 {
+	font-size: 40px;
+	font-family: zilla;
+	font-weight: normal;
+	text-transform: capitalize;
+	line-height: 1.3em;
+	margin-bottom: 12px;
+	color: #3b2c73;
+}
+.staff-info hr {
+	display: inline-block;
+	text-align: center;
+	border: 1px solid #000;
+	width: 150px;
+	margin-bottom: 12px;
+}
+.staff-info p {
+	line-height: 1.6em;
+	letter-spacing: 0.5px;
+}
+.staff-sign {
+	margin-top: 30px;
+}
+.staff-sign img {
+	width: 50%;
+}
+.staff-sign h5 {
+	font-size: 22px;
+	font-weight: normal;
+	font-family: zilla;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.lectureres .depertment {
+	margin: 0 16px;
+}
+.lectureres .depertment h6 {
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+}
+.lectureres .depertment ul {
+	list-style: none;
+}
+.lectureres .depertment ul li {
+	margin-bottom: 10px;
+}
+.lectureres .depertment ul li a {
+	width: 100%;
+	padding: 20px 32px;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	background: #3b2c73;
+	color: #FFF;
+	transition: 0.5s all;
+}
+.lectureres .depertment ul li a:hover {
+	background: #1e1445;
+}
 
 
 /*-----------------------------------------------
               
 -----------------------------------------------*/
-
 
 
 
@@ -1101,7 +1189,28 @@ a {
 	.student-voice .voice {
 		margin-bottom: 32px;
 	}
-
+	/*------Lacturer Staff-----*/
+	.staff-row {
+		grid-template-columns: 1fr;
+	}
+	.staff-info{
+		margin-bottom: 50px;
+		text-align: center;
+	}
+	
+	.staff-img {
+		margin: 0 16px;
+		text-align: center;
+	}
+	.staff-img img {
+		width: 40%;
+	}
+	.staff-sign img {
+		width: 200px;
+	}
+	.lectureres .depertment h6 {
+		text-align:center;
+	}
 
 
 
@@ -1197,8 +1306,11 @@ a {
 	.student-voice-row {
 		grid-template-columns: 1fr;
 	}
-
-
+	/*----Lacturer & Staff Section----*/
+	.staff-img img {
+		width: 50%;
+	}
+	
 
 
 
