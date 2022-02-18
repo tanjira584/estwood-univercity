@@ -460,20 +460,258 @@ a {
 	text-transform: capitalize;
 }
 /*-----------------------------------------------
+              Cities Continent
+-----------------------------------------------*/
+.cities-continent {
+	padding: 100px 0;
+}
+.cities-continent .row {
+	display: flex ;
+}
+.cities-continent .col-7 {
+	width: 60%;
+}
+.cities-continent .col-5 {
+	width: 40%;
+}
+.cities-map img {
+	width: 100%;
+}
+.continents-info {
+	margin-bottom: 30px;
+}
+.continents-info h6 {
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+	color: #3b2c73;
+}
+.continents-info h2 {
+	font-size: 40px;
+	font-family: zilla;
+	font-weight: normal;
+	line-height: 1.3em;
+	margin-bottom: 10px;
+	color: #3b2c73;
+}
+.continents-info hr {
+	display: inline-block;
+	border: 1px solid #000;
+	width: 150px;
+	margin-bottom: 10px;
+}
+
+.cities-continent .cities {
+	display: flex;
+	height: 100%;
+	margin-bottom: 25px;
+	
+}
+.cities-year {
+	width: 100px;
+	border-right: 1px solid #3b2c73;
+}
+.cities-year p {
+	background: #3b2c73;
+	color: #FFF;
+	text-align: center;
+	padding: 5px;
+}
+.cities-info {
+	padding: 0 40px;
+}
+.cities-info h3 {
+	font-size: 24px;
+	font-family: zilla;
+	font-weight: normal;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+}
+.cities-info p {
+	line-height: 1.5em;
+}
+/*-----------------------------------------------
+              Monthly Event
+-----------------------------------------------*/
+.monthly-events {
+	padding: 100px 0;
+	background: #f7f7f7;
+}
+.events-info {
+	width: 50%;
+	margin: 0 16px;
+	margin-bottom: 40px;
+}
+.events-info h6 {
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 12px;
+	color: #3b2c73;
+}
+.events-info h2 {
+	font-size: 40px;
+	font-family: zilla;
+	font-weight: normal;
+	line-height: 1.3em;
+	margin-bottom: 12px;
+	color: #3b2c73;
+}
+.events-info hr {
+	display: inline-block;
+	border: 1px solid #000;
+	width: 150px;
+	margin-bottom: 12px;
+}
+.all-events {
+	margin: 0 16px;
+}
+.all-events .event {
+	display: flex;
+	align-items: center;
+	padding: 20px 0;
+	border-bottom: 1px solid #000;
+}
+.all-events .event .date {
+	width: 17%;
+}
+.all-events .event .date h6 {
+	font-size: 20px;
+	font-family: zilla;
+	font-weight: normal;
+	margin-bottom: 6px;
+}
+.all-events .event .date p {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.all-events .event .name {
+	width: 37%;
+}
+.all-events .event .name h3 {
+	font-size: 26px;
+	font-weight: normal;
+	font-family: zilla;
+}
+.all-events .event .subject {
+	width: 18%;
+}
+.all-events .event .subject h4 {
+	font-size: 22px;
+	font-weight: normal;
+	font-family: zilla;
+	margin-bottom: 6px;
+	text-transform: capitalize;
+}
+.all-events .event .subject p {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.all-events .event .hall {
+	width: 13%;
+	text-align: right;
+}
+.all-events .event .hall p {
+	text-transform: capitalize;
+}
+.all-events .event .btn {
+	width: 15%;
+	text-align: right;
+}
+.all-events .event .btn a{
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #000;
+}
+.all-events .event .btn a i {
+	margin-left: 4px;
+}
+
+.all-events-btn {
+	margin-top: 40px;
+	text-align: center;
+}
+.all-events-btn a {
+	text-transform: uppercase;
+	padding: 25px 40px;
+	letter-spacing: 1px;
+	color: #FFF;
+	background: #3b2c73;
+	font-size: 12px;
+	font-weight: bold;
+	transition: 0.5s;
+}
+.all-events-btn a:hover {
+	background: #1e1445;
+}
+/*-----------------------------------------------
+              Student Voice
+-----------------------------------------------*/
+.student-voice {
+	padding: 100px 0;
+}
+.student-voice .section-info {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.section-info h6 {
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 12px;
+	color: #3b2c73;
+}
+.section-info h2 {
+	font-size: 40px;
+	font-family: zilla;
+	font-weight: normal;
+	text-transform: capitalize;
+	line-height: 1.3em;
+	margin-bottom: 12px;
+	color: #3b2c73;
+}
+.section-info hr {
+	display: inline-block;
+	text-align: center;
+	border: 1px solid #000;
+	width: 150px;
+	margin-bottom: 12px;
+}
+.student-voice-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.student-voice .voice {
+	margin:0 16px;
+}
+.student-voice .voice img {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 16px;
+}
+.student-voice .voice p {
+	line-height: 1.6em;
+	margin-bottom: 16px;
+}
+.student-voice .voice h6 {
+	font-size: 16px;
+	text-transform: capitalize;
+	margin-bottom: 4px;
+}
+.student-voice .voice span {
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #787878;
+}
+
+
+
+
+/*-----------------------------------------------
               
 -----------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -727,7 +965,25 @@ a {
     .choose-us .col-4:nth-child(3) {
        display: none;
     }
-
+	/*----Cities Continent----*/
+	.cities-continent .row {
+		display: inherit;
+	}
+	.cities-continent .row .col-7 {
+		width: 100%;
+	}
+	.cities-continent .row .col-5 {
+		width: 100%;
+	}
+	.continents-info {
+		margin: 0 16px;
+		margin-bottom: 30px;
+	}
+	.cities-continent .cities {
+		width: 70%;
+		margin: auto;
+		margin-bottom: 36px;
+	}
 
 
 
@@ -781,7 +1037,7 @@ a {
         grid-template-columns: 1fr;
     }
     .count-progress {
-        margin: 0 50px;
+        margin: 0 20px;
     }
     .counter-row {
         grid-template-columns:  1fr 1fr;
@@ -800,7 +1056,51 @@ a {
         margin: 0 16px;
         margin-bottom: 32px;
     }
+	/*----------Monthly Events-----------*/
+		.events-info h2 {
+			font-size: 32px;
+		}
+		.all-events .event {
+			display: inherit;
+			text-align: center;
+			padding: 20px 0;
+			border-bottom: 1px solid #000;
+		}
+		.all-events .event .date {
+			width: 100%;
+			margin-bottom: 26px;
+		}
+		.all-events .event .name {
+			width: 100%;
+			margin-bottom: 26px;
+		}
+		.all-events .event .subject {
+			width: 100%;
+			margin-bottom: 26px;
+		}
+		.all-events .event .hall {
+			width: 100%;
+			margin-bottom: 26px;
+			text-align: center;
+		}
+		.all-events .event .btn {
+			width: 100%;
+			margin-bottom: 26px;
+			text-align: center;
+		}
+		.events-info {
+			width: 90%;
+			margin: auto;
+			text-align: center;
+		}
 
+	/*-----Student Voice-----*/
+	.student-voice-row {
+		grid-template-columns: 1fr 1fr;
+	}
+	.student-voice .voice {
+		margin-bottom: 32px;
+	}
 
 
 
@@ -882,8 +1182,21 @@ a {
     .structure:last-of-type {
         margin-bottom: 0;
     }
-
-
+	/*----Cities Continent----*/
+	.continents-info {
+		text-align: center;
+		margin-top: 30px;
+	}
+	.continents-info h2 {
+		font-size: 32px;
+	}
+	.cities-continent .cities {
+		width: 90%;
+	}
+	/*-----Student Voice-----*/
+	.student-voice-row {
+		grid-template-columns: 1fr;
+	}
 
 
 
