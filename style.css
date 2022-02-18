@@ -799,17 +799,117 @@ a {
 
 
 /*-----------------------------------------------
-              
+              Latest News
 -----------------------------------------------*/
-
-
-
-
-
-
-
-
-
+.latest-news {
+	padding:100px 0;
+}
+.latest-news .section-info {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.section-info h6 {
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 12px;
+	color: #3b2c73;
+}
+.section-info h2 {
+	font-size: 40px;
+	font-family: zilla;
+	font-weight: normal;
+	text-transform: capitalize;
+	line-height: 1.3em;
+	margin-bottom: 12px;
+	color: #3b2c73;
+}
+.section-info hr {
+	display: inline-block;
+	text-align: center;
+	border: 1px solid #000;
+	width: 150px;
+	margin-bottom: 12px;
+}
+.latest-news-row{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.news {
+	margin: 0 16px;
+	margin-bottom: 32px;
+	text-align: center;
+}
+.news img {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 16px;
+}
+.news h3 {
+	font-size: 24px;
+	font-family: zilla;
+	font-weight: normal;
+	text-transform: capitalize;
+	margin-bottom: 8px;
+}
+.news .news-meta {
+	text-align: center;
+}
+.news .news-meta span {
+	margin: 0 2px;
+	font-size: 14px;
+	color: #CCCCCC;
+}
+/*-----------------------------------------------
+              Join With Us
+-----------------------------------------------*/
+.join-us-for {
+	background-image: url('images/18.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding: 100px 0;
+}
+.join-content {
+	width: 45%;
+	margin: 0 16px;
+}
+.join-content h6 {
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 12px;
+}
+.join-content h2 {
+	font-size: 40px;
+	font-family: zilla;
+	font-weight: normal;
+	line-height: 1.3em;
+	margin-bottom: 12px;
+}
+.join-content hr {
+	display: inline-block ;
+	border: 1px solid #000;
+	width: 150px;
+	margin-bottom: 12px;
+}
+.join-content p {
+	line-height: 1.6em;
+	margin-bottom: 20px;
+}
+.join-content a{
+	text-transform: uppercase;
+	font-size: 12px;
+	padding: 20px 40px;
+	background: #3b2c73;
+	letter-spacing: 1px;
+	color: #FFF;
+	border-radius: 2px;
+	transition: 0.5s all;
+}
+.join-content a:hover {
+	background:#1e1445;
+}
 /*-----------------------------------------------
               Footer Top Section
 -----------------------------------------------*/
@@ -1072,12 +1172,10 @@ a {
 		margin: auto;
 		margin-bottom: 36px;
 	}
-
-
-
-
-
-
+	/*-----Join With Us------*/
+	.join-content {
+		width: 80%;
+	}
 }
 
 
@@ -1211,10 +1309,14 @@ a {
 	.lectureres .depertment h6 {
 		text-align:center;
 	}
-
-
-
-
+	/*-----Latest News-----*/
+	.latest-news-row {
+		grid-template-columns: 1fr 1fr;
+	}
+	/*-----Join With Us------*/
+	.join-content {
+		width: 90%;
+	}
     /*-----Top Footer Section------*/
     .footer-top-row {
         grid-template-columns: 1fr 1fr;
@@ -1310,10 +1412,19 @@ a {
 	.staff-img img {
 		width: 50%;
 	}
-	
+	/*-----Latest News-----*/
+	.latest-news-row {
+		grid-template-columns: 1fr;
+	}
 
-
-
+	/*-----Join With Us------*/
+	.join-content {
+		width: 95%;
+		text-align: center;
+	}
+	.join-content h2 {
+		font-size: 32px;
+	}
     /*-----Top Footer Section------*/
     .footer-top-row {
         grid-template-columns: 1fr;
